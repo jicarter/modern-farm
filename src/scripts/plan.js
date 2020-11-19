@@ -1,19 +1,19 @@
 const types = ["Soybean", "Corn", "Asparagus", "Wheat", "Potato", "Sunflower"]
 
 export const createPlan = () => {
-    const plan = []
+    const yearlyPlan = []
 
     for (let index = 0; index < 3; index++) {
         const row = []
         for (let j = 0; j < 6; j++) {
             row.push(crop.next().value)
         }
-        plan.push(row)
+        yearlyPlan.push(row)
     }
-
-    return plan
+    
+    console.log(yearlyPlan)
+    return yearlyPlan
 }
-
 
 
 
@@ -29,4 +29,8 @@ const crop = function* () {
         yield types[typeIdx]
     }
 }()
+
+function newFunction(yearlyPlan) {
+    console.log(yearlyPlan)
+}
 
