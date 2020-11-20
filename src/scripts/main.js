@@ -2,7 +2,7 @@
 
 //const { createPlan } = require("./plan.js");
 import { createPlan } from './plan.js';
-createPlan();
+const yearlyPlan = createPlan();
 
 import { createSoybean } from './seeds/soybean.js';
 const soybeanSeed = createSoybean();
