@@ -1,8 +1,9 @@
-//console.log("Welcome to the main module")
 
-//const { createPlan } = require("./plan.js");
+
+
 import { createPlan } from './plan.js';
 const yearlyPlan = createPlan();
+console.log(yearlyPlan);
 
 import { createSoybean } from './seeds/soybean.js';
 const soybeanSeed = createSoybean();
